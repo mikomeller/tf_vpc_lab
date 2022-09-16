@@ -6,6 +6,7 @@ resource "aws_internet_gateway" "gw_internet" {
   }
 }
 
+# nat_eip is fix IPv4 on public_a 
 resource "aws_nat_gateway" "gw_nat" {
   allocation_id = aws_eip.nat_eip.id
   subnet_id     = aws_subnet.public_az_a.id
