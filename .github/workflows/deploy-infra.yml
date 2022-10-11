@@ -13,7 +13,7 @@ jobs:
         # generate aws_access_key in aws iam / enter in https://github.com/{user}}/{project}/settings/secrets/actions
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         # generate aws_secret_access_key in aws iam / enter in https://github.com/{user}}/{project}/settings/secrets/actions
-          aws-secret-key-id: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: "eu-central-1"
 
       - name: Clone/Checkout your repository code
