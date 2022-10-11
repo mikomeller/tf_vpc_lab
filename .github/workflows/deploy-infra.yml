@@ -5,8 +5,7 @@ jobs:
   terraform-deployment:
   runs-on: ubuntu-latest
   # - introduces the list
-  steps: 
-    # EXPORT CREDENTIALS 
+  steps: # EXPORT CREDENTIALS 
     - name: Configure AWS Credentials 
       uses: aws-actions/configure-aws-credentials@v1
       with:
