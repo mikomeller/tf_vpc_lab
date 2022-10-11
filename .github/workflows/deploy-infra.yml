@@ -4,7 +4,7 @@ on: [push]
 jobs: 
   terraform-deployment:
     runs-on: ubuntu-latest
-    # - introduces the list
+    # - introduces the list in yaml
     steps: 
     # EXPORT CREDENTIALS 
       - name: Configure AWS Credentials 
