@@ -8,7 +8,7 @@ jobs:
   steps: 
     # EXPORT CREDENTIALS 
     - name: Configure AWS Credentials 
-      uses aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/configure-aws-credentials@v1
       with:
       # generate aws_access_key in aws iam / enter in https://github.com/{user}}/{project}/settings/secrets/actions
         aws-acess-key-id: ${{ secrets.AWS_ACCESS_KEY }}
